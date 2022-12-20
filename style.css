@@ -1,0 +1,85 @@
+/*
+    main: 사이트 메인
+    col: 메뉴 및 본문
+    col ul: 메뉴
+    col h2: 본문 제목
+    col p: 본문
+    date: 작성 날짜
+    a: 링크
+*/
+
+body{
+    margin: 0;
+}
+
+#main{            
+    text-align: center;
+    font-size: 80px; 
+    border-bottom: 3px solid black;
+    margin-top: 5px;
+    margin-bottom: 0px;    
+}
+
+#col{
+    display: grid;
+    grid-template-columns: 195px 1fr;
+    margin: 0;   
+    border-bottom: 3px solid black; 
+}
+
+#col ul{
+    border-right: 3px solid black;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-left: 45px;
+    width: 150px;
+    margin:0;
+    font-size: 25px;
+}
+
+#col div{
+    font-size: 30px; 
+    padding: 0;    
+    margin: 0;
+}
+
+#col h2{
+    border-bottom: 3px solid black; 
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+#col p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;     
+}
+
+.date{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;    
+}
+
+p{
+    word-break: keep-all;
+}
+@media(max-width: 600px){
+    #main{
+        font-size: 50px;         
+    }
+    #col{
+        display: block;
+    }
+    #col ul{
+        border-right: none;
+        border-bottom: 3px solid black;
+        padding-bottom: 20px;
+        padding-right:100%;
+    }
+    #col h2{
+        text-align: center;
+    }    
+}
